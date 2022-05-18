@@ -1,0 +1,74 @@
+/* .card {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+*/
+.productsWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding-left: 100px;
+}
+/*
+.btn {
+  border: none;
+  outline: none;
+  background: #764abc;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #513282;
+}
+img {
+  height: 80px;
+} */
+
+.loadingCenter {
+  text-align: center;
+}
+
+.cardOuter {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 250px;
+  height: 330px;
+}
+.imgcard {
+  width: 285px;
+  height: 183px;
+}
+.info {
+  padding: 10px;
+  background-color: #bba3a399;
+}
+.spnRightCard {
+  font: 12;
+  color: #363b36db;
+  font-weight: normal;
+}
+.cartTitl {
+  font: 21px;
+  font-weight: normal;
+}
+.heart {
+  color: #f9f8f8;
+  font-size: 16px;
+  padding-left: 100px;
+  cursor: pointer;
+}
+.heart:hover {
+  color: #f70d0d;
+}
