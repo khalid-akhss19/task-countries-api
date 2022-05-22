@@ -1,0 +1,59 @@
+.bydefault {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+
+  cursor: pointer;
+}
+.primary {
+  border: 1px solid #2776ee;
+  background-color: #2776ee;
+  height: 54px;
+  width: 133px;
+  color: #fff;
+  border-radius: 50px;
+}
+.secondary {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  width: 185px;
+  height: 54px;
+  border-radius: 50px;
+  position: absolute;
+}
+.creators {
+  background: #ffffff;
+  border: 1px solid black;
+  color: #000000;
+  width: 201px;
+  height: 46px;
+  border-radius: 50px;
+  position: absolute;
+}
+.blackBtnBid {
+  width: 287px;
+  height: 57px;
+  color: white;
+  background: #000000;
+  border-radius: 10px;
+}
+.whiteBtnAertwk {
+  width: 205px;
+  height: 57px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: black;
+}
+.viewallnft {
+  display: flex;
+  justify-content: flex-end;
+  background: #ffffff;
+  border: 1px solid #666666;
+  border-radius: 50px;
+  margin-left: 43vw;
+}

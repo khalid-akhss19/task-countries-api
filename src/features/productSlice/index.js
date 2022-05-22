@@ -7,19 +7,12 @@ export const STATUSES = Object.freeze({
 });
 
 const productSlice = createSlice({
-  name: "product",
+  name: "CARDS",
   initialState: {
     data: [],
     status: STATUSES.IDLE,
   },
   reducers: {
-    // setProducts(state, action) {
-    //     state.data = action.payload;
-    // },
-    // setStatus(state, action) {
-    //     state.status = action.payload;
-    // },
-
     setInput: (state, action) => {
       if (action.payload != null) {
         state.data = state.data.filter((item) => {
@@ -49,10 +42,12 @@ export const { setProducts, setStatus, setInput } = productSlice.actions;
 export default productSlice.reducer;
 
 // Thunks
-export const fetchProducts = createAsyncThunk("countries/fetch", async () => {
-  const res = await fetch("https://restcountries.com/v2/all");
+export const fetchProducts = createAsyncThunk("nft/fetch", async () => {
+  const res = await fetch(
+    "http://boax.alshumaal.com/admin/admin/api/Creators/readFeaturedCreators.php"
+  );
   const data = await res.json();
-  return data;
+  return data.Creators;
 });
 
 // export function fetchProducts() {

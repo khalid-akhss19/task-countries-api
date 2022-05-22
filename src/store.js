@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import countryReducer from "./features/countrySlice/index";
+// import countryReducer from "./features/countrySlice/index";
 import productReducer from "./features/productSlice/index";
+import post from "./features/postSlicer/postSlicer";
 const store = configureStore({
   reducer: {
-    country: countryReducer,
+    // country: countryReducer,
     product: productReducer,
+    postSlice: post,
   },
 });
 

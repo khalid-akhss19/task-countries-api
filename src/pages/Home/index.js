@@ -1,17 +1,19 @@
 import React from "react";
-// import Card from "../../components/Card";
 import FetchApi from "../../components/FetchApi";
-import HeroSection from "../../components/HeroSection";
+
+import Mainauction from "../../components/Mainauction";
 import { Box } from "@material-ui/core";
+import WrappperMargin from "../../components/WrappperMargin";
 
 const Home = () => {
   return (
     <>
       <Box pt={5}>
-        <HeroSection />
+        <WrappperMargin>
+          <Mainauction />
+        </WrappperMargin>
       </Box>
 
-      {/* <Card /> */}
       <Box pt={5}>
         <FetchApi />
       </Box>

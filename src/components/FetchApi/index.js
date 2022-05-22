@@ -5,7 +5,12 @@ import { fetchProducts } from "../../features/productSlice";
 import { STATUSES } from "../../features/productSlice";
 import "./style.css";
 
+import { Box, makeStyles, Typography } from "@material-ui/core";
+
+import one from "../../assets/oneone.png";
+
 const FetchApi = () => {
+  const classes = useStyles();
   const dispatch = useDispatch();
   const { data: products, status } = useSelector((state) => state.product);
   // const [products, setProducts] = useState([]);
@@ -34,38 +39,34 @@ const FetchApi = () => {
   }
   return (
     <>
+      <div className="FeaturedCreators">
+        <h2>Featured Creators</h2>
+      </div>
       <div className="productsWrapper">
         {products.map((product) => (
-          <div className="cardOuter" key={product.id}>
-            <img src={product.flag} className="imgcard" />
-            <div className="info">
-              <h2 className="cartTitl">
-                {product.name}
-                {/* <span className="heart">
-                <i class="fa-solid fa-heart"></i>
-              </span> */}
-              </h2>
-
-              <div>
-                population:
-                <span className="spnRightCard">{product.population}</span>
+          <>
+            <div className="a">
+              <div className="b">
+                <img src={product.creator_img} alt="" className="photo2" />
               </div>
 
-              <div>
-                region: <span className="spnRightCard">{product.region}</span>{" "}
+              <Box className={classes.details}>
+                <Typography variant="h4" className={classes.colorchnge}>
+                  {product.username}
+                </Typography>
+                <Typography variant="h5" className={classes.colorchnge}>
+                  @{product.fullName}
+                </Typography>
+                <Typography varient="h6" className={classes.colorchnge}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pharetra, neque mi congue eleifend aenean in.
+                </Typography>
+              </Box>
+              <div className="c">
+                <img className="necircleimg" src={one} alt="" />
               </div>
-
-              <div>
-                capital: <span className="spnRightCard">{product.capital}</span>
-              </div>
-              <button onClick={() => handleAdd(product)} className="btn">
-                Add to Fav
-                <span className="heart">
-                  <i class="fa-solid fa-heart"></i>
-                </span>
-              </button>
             </div>
-          </div>
+          </>
         ))}
       </div>
     </>
@@ -73,3 +74,30 @@ const FetchApi = () => {
 };
 
 export default FetchApi;
+
+const useStyles = makeStyles((theme) => ({
+  card: {
+    width: "305.24px",
+    borderRadius: "10px",
+
+    margin: "20px",
+    position: "relative",
+  },
+  details: {
+    backgroundColor: "#B5B5B5",
+    clipPath:
+      "polygon(20% 14%, 100% 0, 100% 100%, 0 100%, 0 83%, 0 34%, 0 29%, 4% 24%, 8% 20%, 14% 16%)",
+    padding: "100px 20px 0 20px",
+    borderBottomRightRadius: "10px",
+    borderBottomLeftRadius: " 10px",
+    position: "absolute",
+    bottom: "5px",
+  },
+  imgO: {
+    position: "absolute",
+    zIndex: "2",
+  },
+  colorchnge: {
+    color: "#FFFFFF",
+  },
+}));

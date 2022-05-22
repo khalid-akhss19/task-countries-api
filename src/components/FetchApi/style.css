@@ -35,7 +35,7 @@ img {
   text-align: center;
 }
 
-.cardOuter {
+/* .cardOuter {
   display: flex;
   flex-direction: column;
   text-transform: capitalize;
@@ -45,16 +45,16 @@ img {
   cursor: pointer;
   width: 250px;
   height: 330px;
-}
-.imgcard {
+} */
+/* .imgcard {
   width: 285px;
   height: 183px;
-}
-.info {
+} */
+/* .info {
   padding: 10px;
   background-color: #bba3a399;
-}
-.spnRightCard {
+} */
+/* .spnRightCard {
   font: 12;
   color: #363b36db;
   font-weight: normal;
@@ -70,5 +70,107 @@ img {
   cursor: pointer;
 }
 .heart:hover {
-  color: #f70d0d;
+  color: #f70d0d; */
+/* } */
+
+.card-container {
+  width: 287px;
+  /* height: 557px; */
+}
+.last-end {
+  display: flex;
+  justify-content: space-evenly;
+
+  color: white;
+
+  border-radius: 0px 0px 5px 5px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+.last-content {
+  margin-top: 10px;
+  margin-left: -43px;
+}
+.outer-container {
+  border-radius: 2px solid black;
+  position: relative;
+}
+
+.circle-picture {
+  display: flex;
+  gap: 15px;
+}
+.Ellipse2 {
+  width: 38px;
+  height: 38px;
+  margin-bottom: 20px;
+  position: absolute;
+}
+.link2 {
+  /* font-family: Lato; */
+  /* font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+  color: #666666;
+  margin-top: 10px; */
+}
+.cardmod {
+  border-radius: 90px 20px 0px;
+  background: #b5b5b5;
+
+  width: 305.24px;
+  height: 150px;
+}
+.photo {
+  width: 287px;
+  height: 297px;
+
+  border-top-right-radius: 10px;
+}
+.FeaturedCreators {
+  height: 29px;
+  display: flex;
+  justify-content: center;
+}
+
+.a {
+  width: 305.24px;
+  height: 469px;
+  background-color: #ffffff;
+  position: relative;
+  /* border: 3px solid #4e16f6; */
+  border-radius: 5px;
+}
+.b {
+}
+.c {
+  position: absolute;
+  width: 95.72px;
+  height: 90px;
+}
+.d {
+  background: #b5b5b5;
+  position: absolute;
+  bottom: 5px;
+
+  width: 305.24px;
+  height: 162px;
+}
+.photo2 {
+  width: 305.24px;
+  height: 297px;
+  border-radius: 5px 5px 0px 0px;
+}
+.necircleimg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 100px;
+}
+.dtail {
+  padding: 25px;
 }
